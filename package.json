@@ -1,6 +1,6 @@
 {
   "name": "react-native-otp-code-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "react native OTP code generator",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -50,9 +50,6 @@
     "url": "https://github.com/Maverick5000/react-native-otp-code-generator/issues"
   },
   "homepage": "https://github.com/Maverick5000/react-native-otp-code-generator#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.2.2",

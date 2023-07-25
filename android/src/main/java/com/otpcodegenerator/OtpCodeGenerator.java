@@ -14,19 +14,19 @@ import java.time.Instant;
 
 import androidx.annotation.NonNull;
 
-@ReactModule(name = OtpCodeGeneratorModule.NAME)
-public class OtpCodeGeneratorModule extends ReactContextBaseJavaModule {
+@ReactModule(name = OtpCodeGenerator.NAME)
+public class OtpCodeGenerator extends ReactContextBaseJavaModule {
     public static final String NAME = "OtpCodeGenerator";
     private static final int DEFAULT_PASSCODE_LENGTH = 6;
     private static final int MAX_PASSCODE_LENGTH = 9;
     private final int passcodeLength;
 
-    public OtpCodeGeneratorModule(ReactApplicationContext reactContext) {
+    public OtpCodeGenerator(ReactApplicationContext reactContext) {
         super(reactContext);
         this.passcodeLength = DEFAULT_PASSCODE_LENGTH;
     }
 
-    public OtpCodeGeneratorModule(ReactApplicationContext reactContext, int passcodeLength) {
+    public OtpCodeGenerator(ReactApplicationContext reactContext, int passcodeLength) {
         super(reactContext);
         if (passcodeLength < 1 || passcodeLength > MAX_PASSCODE_LENGTH) {
             throw new IllegalArgumentException("Passcode length must be between 1 and " + MAX_PASSCODE_LENGTH);

@@ -16,7 +16,7 @@ public class OtpCodeGeneratorPackage implements ReactPackage {
   @Override
   public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
-    modules.add(new OtpCodeGeneratorModule(reactContext));
+    modules.add(new OtpCodeGenerator(reactContext));
     return modules;
   }
 
